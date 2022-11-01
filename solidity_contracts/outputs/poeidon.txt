@@ -1,0 +1,252 @@
+FinalizePoseidon2
+contract deployment gas: 1074534 --- 0.42981 seconds
+library deployment gas: 1575485 for VerifierFinalizePoseidon2 --- 0.63019 seconds
+finalize gas: 304400 --- 0.12176 seconds
+finalize data length: 778
+
+FinalizePoseidon4
+contract deployment gas: 1074510 --- 0.42980 seconds
+library deployment gas: 1679052 for VerifierFinalizePoseidon4 --- 0.67162 seconds
+finalize gas: 353410 --- 0.14136 seconds
+finalize data length: 1034
+
+FinalizePoseidon8
+contract deployment gas: 1074510 --- 0.42980 seconds
+library deployment gas: 1886802 for VerifierFinalizePoseidon8 --- 0.75472 seconds
+finalize gas: 451560 --- 0.18062 seconds
+finalize data length: 1546
+
+FinalizePoseidon16
+contract deployment gas: 1074510 --- 0.42980 seconds
+library deployment gas: 2301939 for VerifierFinalizePoseidon16 --- 0.92078 seconds
+finalize gas: 647953 --- 0.25918 seconds
+finalize data length: 2570
+
+FinalizePoseidon32
+contract deployment gas: 1074510 --- 0.42980 seconds
+library deployment gas: 3132077 for VerifierFinalizePoseidon32 --- 1.25283 seconds
+finalize gas: 1041721 --- 0.41669 seconds
+finalize data length: 4618
+
+FinalizePoseidon64
+contract deployment gas: 1074510 --- 0.42980 seconds
+library deployment gas: 4792128 for VerifierFinalizePoseidon64 --- 1.91685 seconds
+finalize gas: 1833348 --- 0.73334 seconds
+finalize data length: 8714
+
+Joint for FinalizePoseidon2 with 2 inputs
+finalize gas (~304400 x 1): 304400 --- 0.12176 seconds
+non-joint finalize gas (~304400 x 1): 304400 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 4 inputs
+finalize gas (~304400 x 2): 608800 --- 0.24352 seconds
+non-joint finalize gas (~353410 x 1): 353410 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 8 inputs
+finalize gas (~304400 x 4): 1217600 --- 0.48704 seconds
+non-joint finalize gas (~451560 x 1): 451560 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 16 inputs
+finalize gas (~304400 x 8): 2435200 --- 0.97408 seconds
+non-joint finalize gas (~647953 x 1): 647953 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 32 inputs
+finalize gas (~304400 x 16): 4870400 --- 1.94816 seconds
+non-joint finalize gas (~1041721 x 1): 1041721 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 64 inputs
+finalize gas (~304400 x 32): 9740800 --- 3.89632 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon2 with 128 inputs
+finalize gas (~304400 x 64): 19481600 --- 7.79264 seconds
+
+Joint for FinalizePoseidon2 with 256 inputs
+finalize gas (~304400 x 128): 38963200 --- 15.58528 seconds
+
+Joint for FinalizePoseidon2 with 512 inputs
+finalize gas (~304400 x 256): 77926400 --- 31.17056 seconds
+
+Joint for FinalizePoseidon2 with 1024 inputs
+finalize gas (~304400 x 512): 155852800 --- 62.34112 seconds
+
+Joint for FinalizePoseidon2 with 2048 inputs
+finalize gas (~304400 x 1024): 311705600 --- 124.68224 seconds
+
+Joint for FinalizePoseidon2 with 4096 inputs
+finalize gas (~304400 x 2048): 623411200 --- 249.36448 seconds
+
+Joint for FinalizePoseidon2 with 8192 inputs
+finalize gas (~304400 x 4096): 1246822400 --- 498.72896 seconds
+
+-----------------------------------------------------------------------------
+Joint for FinalizePoseidon4 with 4 inputs
+finalize gas (~353410 x 1): 353410 --- 0.14136 seconds
+non-joint finalize gas (~353410 x 1): 353410 --- NaN seconds
+
+Joint for FinalizePoseidon4 with 8 inputs
+finalize gas (~353410 x 2): 706820 --- 0.28273 seconds
+non-joint finalize gas (~451560 x 1): 451560 --- NaN seconds
+
+Joint for FinalizePoseidon4 with 16 inputs
+finalize gas (~353410 x 4): 1413640 --- 0.56546 seconds
+non-joint finalize gas (~647953 x 1): 647953 --- NaN seconds
+
+Joint for FinalizePoseidon4 with 32 inputs
+finalize gas (~353410 x 8): 2827280 --- 1.13091 seconds
+non-joint finalize gas (~1041721 x 1): 1041721 --- NaN seconds
+
+Joint for FinalizePoseidon4 with 64 inputs
+finalize gas (~353410 x 16): 5654560 --- 2.26182 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon4 with 128 inputs
+finalize gas (~353410 x 32): 11309120 --- 4.52365 seconds
+
+Joint for FinalizePoseidon4 with 256 inputs
+finalize gas (~353410 x 64): 22618240 --- 9.04730 seconds
+
+Joint for FinalizePoseidon4 with 512 inputs
+finalize gas (~353410 x 128): 45236480 --- 18.09459 seconds
+
+Joint for FinalizePoseidon4 with 1024 inputs
+finalize gas (~353410 x 256): 90472960 --- 36.18918 seconds
+
+Joint for FinalizePoseidon4 with 2048 inputs
+finalize gas (~353410 x 512): 180945920 --- 72.37837 seconds
+
+Joint for FinalizePoseidon4 with 4096 inputs
+finalize gas (~353410 x 1024): 361891840 --- 144.75674 seconds
+
+Joint for FinalizePoseidon4 with 8192 inputs
+finalize gas (~353410 x 2048): 723783680 --- 289.51347 seconds
+
+-----------------------------------------------------------------------------
+Joint for FinalizePoseidon8 with 8 inputs
+finalize gas (~451560 x 1): 451560 --- 0.18062 seconds
+non-joint finalize gas (~451560 x 1): 451560 --- NaN seconds
+
+Joint for FinalizePoseidon8 with 16 inputs
+finalize gas (~451560 x 2): 903120 --- 0.36125 seconds
+non-joint finalize gas (~647953 x 1): 647953 --- NaN seconds
+
+Joint for FinalizePoseidon8 with 32 inputs
+finalize gas (~451560 x 4): 1806240 --- 0.72250 seconds
+non-joint finalize gas (~1041721 x 1): 1041721 --- NaN seconds
+
+Joint for FinalizePoseidon8 with 64 inputs
+finalize gas (~451560 x 8): 3612480 --- 1.44499 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon8 with 128 inputs
+finalize gas (~451560 x 16): 7224960 --- 2.88998 seconds
+
+Joint for FinalizePoseidon8 with 256 inputs
+finalize gas (~451560 x 32): 14449920 --- 5.77997 seconds
+
+Joint for FinalizePoseidon8 with 512 inputs
+finalize gas (~451560 x 64): 28899840 --- 11.55994 seconds
+
+Joint for FinalizePoseidon8 with 1024 inputs
+finalize gas (~451560 x 128): 57799680 --- 23.11987 seconds
+
+Joint for FinalizePoseidon8 with 2048 inputs
+finalize gas (~451560 x 256): 115599360 --- 46.23974 seconds
+
+Joint for FinalizePoseidon8 with 4096 inputs
+finalize gas (~451560 x 512): 231198720 --- 92.47949 seconds
+
+Joint for FinalizePoseidon8 with 8192 inputs
+finalize gas (~451560 x 1024): 462397440 --- 184.95898 seconds
+
+-----------------------------------------------------------------------------
+Joint for FinalizePoseidon16 with 16 inputs
+finalize gas (~647953 x 1): 647953 --- 0.25918 seconds
+non-joint finalize gas (~647953 x 1): 647953 --- NaN seconds
+
+Joint for FinalizePoseidon16 with 32 inputs
+finalize gas (~647953 x 2): 1295906 --- 0.51836 seconds
+non-joint finalize gas (~1041721 x 1): 1041721 --- NaN seconds
+
+Joint for FinalizePoseidon16 with 64 inputs
+finalize gas (~647953 x 4): 2591812 --- 1.03672 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon16 with 128 inputs
+finalize gas (~647953 x 8): 5183624 --- 2.07345 seconds
+
+Joint for FinalizePoseidon16 with 256 inputs
+finalize gas (~647953 x 16): 10367248 --- 4.14690 seconds
+
+Joint for FinalizePoseidon16 with 512 inputs
+finalize gas (~647953 x 32): 20734496 --- 8.29380 seconds
+
+Joint for FinalizePoseidon16 with 1024 inputs
+finalize gas (~647953 x 64): 41468992 --- 16.58760 seconds
+
+Joint for FinalizePoseidon16 with 2048 inputs
+finalize gas (~647953 x 128): 82937984 --- 33.17519 seconds
+
+Joint for FinalizePoseidon16 with 4096 inputs
+finalize gas (~647953 x 256): 165875968 --- 66.35039 seconds
+
+Joint for FinalizePoseidon16 with 8192 inputs
+finalize gas (~647953 x 512): 331751936 --- 132.70077 seconds
+
+-----------------------------------------------------------------------------
+Joint for FinalizePoseidon32 with 32 inputs
+finalize gas (~1041721 x 1): 1041721 --- 0.41669 seconds
+non-joint finalize gas (~1041721 x 1): 1041721 --- NaN seconds
+
+Joint for FinalizePoseidon32 with 64 inputs
+finalize gas (~1041721 x 2): 2083442 --- 0.83338 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon32 with 128 inputs
+finalize gas (~1041721 x 4): 4166884 --- 1.66675 seconds
+
+Joint for FinalizePoseidon32 with 256 inputs
+finalize gas (~1041721 x 8): 8333768 --- 3.33351 seconds
+
+Joint for FinalizePoseidon32 with 512 inputs
+finalize gas (~1041721 x 16): 16667536 --- 6.66701 seconds
+
+Joint for FinalizePoseidon32 with 1024 inputs
+finalize gas (~1041721 x 32): 33335072 --- 13.33403 seconds
+
+Joint for FinalizePoseidon32 with 2048 inputs
+finalize gas (~1041721 x 64): 66670144 --- 26.66806 seconds
+
+Joint for FinalizePoseidon32 with 4096 inputs
+finalize gas (~1041721 x 128): 133340288 --- 53.33612 seconds
+
+Joint for FinalizePoseidon32 with 8192 inputs
+finalize gas (~1041721 x 256): 266680576 --- 106.67223 seconds
+
+-----------------------------------------------------------------------------
+Joint for FinalizePoseidon64 with 64 inputs
+finalize gas (~1833348 x 1): 1833348 --- 0.73334 seconds
+non-joint finalize gas (~1833348 x 1): 1833348 --- NaN seconds
+
+Joint for FinalizePoseidon64 with 128 inputs
+finalize gas (~1833348 x 2): 3666696 --- 1.46668 seconds
+
+Joint for FinalizePoseidon64 with 256 inputs
+finalize gas (~1833348 x 4): 7333392 --- 2.93336 seconds
+
+Joint for FinalizePoseidon64 with 512 inputs
+finalize gas (~1833348 x 8): 14666784 --- 5.86671 seconds
+
+Joint for FinalizePoseidon64 with 1024 inputs
+finalize gas (~1833348 x 16): 29333568 --- 11.73343 seconds
+
+Joint for FinalizePoseidon64 with 2048 inputs
+finalize gas (~1833348 x 32): 58667136 --- 23.46685 seconds
+
+Joint for FinalizePoseidon64 with 4096 inputs
+finalize gas (~1833348 x 64): 117334272 --- 46.93371 seconds
+
+Joint for FinalizePoseidon64 with 8192 inputs
+finalize gas (~1833348 x 128): 234668544 --- 93.86742 seconds
+
+-----------------------------------------------------------------------------

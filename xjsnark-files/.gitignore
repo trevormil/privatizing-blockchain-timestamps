@@ -5,4 +5,12 @@ zkay*
 circuits/*.vk.json
 circuits/*.pk
 
-circuits/Finalize*
+circuits/FinalizeDutchAuction*
+
+# circuits/Finalize2*
+# circuits/Finalize4*
+circuits/Finalize8*
+circuits/Finalize16*
+circuits/Finalize32*
+circuits/Finalize64*
+circuits/Finalize128*

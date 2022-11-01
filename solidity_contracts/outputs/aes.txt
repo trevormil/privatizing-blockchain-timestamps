@@ -1,0 +1,330 @@
+Compiled 19 Solidity files successfully
+reveal library deployment gas: 2851586 --- 1.14063 seconds
+
+Finalize2
+contract deployment gas: 1270118 --- 0.50805 seconds
+library deployment gas: 1446231 for VerifierFinalize2 --- 0.57849 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 426275 --- 0.17051 seconds
+finalize data length: 1866
+
+Finalize4
+contract deployment gas: 1269871 --- 0.50795 seconds
+library deployment gas: 1952145 for VerifierFinalize4 --- 0.78086 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 613553 --- 0.24542 seconds
+finalize data length: 3018
+
+Finalize8
+contract deployment gas: 1270118 --- 0.50805 seconds
+library deployment gas: 2963548 for VerifierFinalize8 --- 1.18542 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 988195 --- 0.39528 seconds
+finalize data length: 5322
+
+Finalize16
+contract deployment gas: 1270118 --- 0.50805 seconds
+library deployment gas: 4994336 for VerifierFinalize16 --- 1.99773 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 1737700 --- 0.69508 seconds
+finalize data length: 9930
+
+Finalize32
+contract deployment gas: 1270106 --- 0.50804 seconds
+library deployment gas: 9103364 for VerifierFinalize32 --- 3.64135 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 3237560 --- 1.29502 seconds
+finalize data length: 19146
+
+Finalize64
+contract deployment gas: 1270094 --- 0.50804 seconds
+library deployment gas: 18119193 for VerifierFinalize64 --- 7.24768 seconds
+reveal gas: 2373505  --- first:  2390605 ---  ~ 0.94940 seconds
+reveal data length: 5066
+finalize gas: 6240330 --- 2.49613 seconds
+finalize data length: 37578
+
+Joint for Finalize2 with 2 inputs
+reveal gas (~2373505 x 2) = 4764110 --- ~ 0.94940 seconds
+finalize gas (~426275 x 1): 426275 --- 0.17051 seconds
+non-joint finalize gas (~426275 x 1): 426275 --- 0.17051 seconds
+
+Joint for Finalize2 with 4 inputs
+reveal gas (~2373505 x 4) = 9511120 --- ~ 0.94940 seconds
+finalize gas (~426275 x 2): 852550 --- 0.34102 seconds
+non-joint finalize gas (~613553 x 1): 613553 --- 0.24542 seconds
+
+Joint for Finalize2 with 8 inputs
+reveal gas (~2373505 x 8) = 19005140 --- ~ 0.94940 seconds
+finalize gas (~426275 x 4): 1705100 --- 0.68204 seconds
+non-joint finalize gas (~988195 x 1): 988195 --- 0.39528 seconds
+
+Joint for Finalize2 with 16 inputs
+reveal gas (~2373505 x 16) = 37993180 --- ~ 0.94940 seconds
+finalize gas (~426275 x 8): 3410200 --- 1.36408 seconds
+non-joint finalize gas (~1737700 x 1): 1737700 --- 0.69508 seconds
+
+Joint for Finalize2 with 32 inputs
+reveal gas (~2373505 x 32) = 75969260 --- ~ 0.94940 seconds
+finalize gas (~426275 x 16): 6820400 --- 2.72816 seconds
+non-joint finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+
+Joint for Finalize2 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~426275 x 32): 13640800 --- 5.45632 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize2 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~426275 x 64): 27281600 --- 10.91264 seconds
+
+Joint for Finalize2 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~426275 x 128): 54563200 --- 21.82528 seconds
+
+Joint for Finalize2 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~426275 x 256): 109126400 --- 43.65056 seconds
+
+Joint for Finalize2 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~426275 x 512): 218252800 --- 87.30112 seconds
+
+Joint for Finalize2 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~426275 x 1024): 436505600 --- 174.60224 seconds
+
+Joint for Finalize2 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~426275 x 2048): 873011200 --- 349.20448 seconds
+
+Joint for Finalize2 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~426275 x 4096): 1746022400 --- 698.40896 seconds
+
+-----------------------------------------------------------------------------
+Joint for Finalize4 with 4 inputs
+reveal gas (~2373505 x 4) = 9511120 --- ~ 0.94940 seconds
+finalize gas (~613553 x 1): 613553 --- 0.24542 seconds
+non-joint finalize gas (~613553 x 1): 613553 --- 0.24542 seconds
+
+Joint for Finalize4 with 8 inputs
+reveal gas (~2373505 x 8) = 19005140 --- ~ 0.94940 seconds
+finalize gas (~613553 x 2): 1227106 --- 0.49084 seconds
+non-joint finalize gas (~988195 x 1): 988195 --- 0.39528 seconds
+
+Joint for Finalize4 with 16 inputs
+reveal gas (~2373505 x 16) = 37993180 --- ~ 0.94940 seconds
+finalize gas (~613553 x 4): 2454212 --- 0.98168 seconds
+non-joint finalize gas (~1737700 x 1): 1737700 --- 0.69508 seconds
+
+Joint for Finalize4 with 32 inputs
+reveal gas (~2373505 x 32) = 75969260 --- ~ 0.94940 seconds
+finalize gas (~613553 x 8): 4908424 --- 1.96337 seconds
+non-joint finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+
+Joint for Finalize4 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~613553 x 16): 9816848 --- 3.92674 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize4 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~613553 x 32): 19633696 --- 7.85348 seconds
+
+Joint for Finalize4 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~613553 x 64): 39267392 --- 15.70696 seconds
+
+Joint for Finalize4 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~613553 x 128): 78534784 --- 31.41391 seconds
+
+Joint for Finalize4 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~613553 x 256): 157069568 --- 62.82783 seconds
+
+Joint for Finalize4 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~613553 x 512): 314139136 --- 125.65565 seconds
+
+Joint for Finalize4 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~613553 x 1024): 628278272 --- 251.31131 seconds
+
+Joint for Finalize4 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~613553 x 2048): 1256556544 --- 502.62262 seconds
+
+-----------------------------------------------------------------------------
+Joint for Finalize8 with 8 inputs
+reveal gas (~2373505 x 8) = 19005140 --- ~ 0.94940 seconds
+finalize gas (~988195 x 1): 988195 --- 0.39528 seconds
+non-joint finalize gas (~988195 x 1): 988195 --- 0.39528 seconds
+
+Joint for Finalize8 with 16 inputs
+reveal gas (~2373505 x 16) = 37993180 --- ~ 0.94940 seconds
+finalize gas (~988195 x 2): 1976390 --- 0.79056 seconds
+non-joint finalize gas (~1737700 x 1): 1737700 --- 0.69508 seconds
+
+Joint for Finalize8 with 32 inputs
+reveal gas (~2373505 x 32) = 75969260 --- ~ 0.94940 seconds
+finalize gas (~988195 x 4): 3952780 --- 1.58111 seconds
+non-joint finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+
+Joint for Finalize8 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~988195 x 8): 7905560 --- 3.16222 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize8 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~988195 x 16): 15811120 --- 6.32445 seconds
+
+Joint for Finalize8 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~988195 x 32): 31622240 --- 12.64890 seconds
+
+Joint for Finalize8 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~988195 x 64): 63244480 --- 25.29779 seconds
+
+Joint for Finalize8 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~988195 x 128): 126488960 --- 50.59558 seconds
+
+Joint for Finalize8 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~988195 x 256): 252977920 --- 101.19117 seconds
+
+Joint for Finalize8 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~988195 x 512): 505955840 --- 202.38234 seconds
+
+Joint for Finalize8 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~988195 x 1024): 1011911680 --- 404.76467 seconds
+
+-----------------------------------------------------------------------------
+Joint for Finalize16 with 16 inputs
+reveal gas (~2373505 x 16) = 37993180 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 1): 1737700 --- 0.69508 seconds
+non-joint finalize gas (~1737700 x 1): 1737700 --- 0.69508 seconds
+
+Joint for Finalize16 with 32 inputs
+reveal gas (~2373505 x 32) = 75969260 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 2): 3475400 --- 1.39016 seconds
+non-joint finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+
+Joint for Finalize16 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 4): 6950800 --- 2.78032 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize16 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 8): 13901600 --- 5.56064 seconds
+
+Joint for Finalize16 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 16): 27803200 --- 11.12128 seconds
+
+Joint for Finalize16 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 32): 55606400 --- 22.24256 seconds
+
+Joint for Finalize16 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 64): 111212800 --- 44.48512 seconds
+
+Joint for Finalize16 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 128): 222425600 --- 88.97024 seconds
+
+Joint for Finalize16 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 256): 444851200 --- 177.94048 seconds
+
+Joint for Finalize16 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~1737700 x 512): 889702400 --- 355.88096 seconds
+
+-----------------------------------------------------------------------------
+Joint for Finalize32 with 32 inputs
+reveal gas (~2373505 x 32) = 75969260 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+non-joint finalize gas (~3237560 x 1): 3237560 --- 1.29502 seconds
+
+Joint for Finalize32 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 2): 6475120 --- 2.59005 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize32 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 4): 12950240 --- 5.18010 seconds
+
+Joint for Finalize32 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 8): 25900480 --- 10.36019 seconds
+
+Joint for Finalize32 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 16): 51800960 --- 20.72038 seconds
+
+Joint for Finalize32 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 32): 103601920 --- 41.44077 seconds
+
+Joint for Finalize32 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 64): 207203840 --- 82.88154 seconds
+
+Joint for Finalize32 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 128): 414407680 --- 165.76307 seconds
+
+Joint for Finalize32 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~3237560 x 256): 828815360 --- 331.52614 seconds
+
+-----------------------------------------------------------------------------
+Joint for Finalize64 with 64 inputs
+reveal gas (~2373505 x 64) = 151921420 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+non-joint finalize gas (~6240330 x 1): 6240330 --- 2.49613 seconds
+
+Joint for Finalize64 with 128 inputs
+reveal gas (~2373505 x 128) = 303825740 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 2): 12480660 --- 4.99226 seconds
+
+Joint for Finalize64 with 256 inputs
+reveal gas (~2373505 x 256) = 607634380 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 4): 24961320 --- 9.98453 seconds
+
+Joint for Finalize64 with 512 inputs
+reveal gas (~2373505 x 512) = 1215251660 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 8): 49922640 --- 19.96906 seconds
+
+Joint for Finalize64 with 1024 inputs
+reveal gas (~2373505 x 1024) = 2430486220 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 16): 99845280 --- 39.93811 seconds
+
+Joint for Finalize64 with 2048 inputs
+reveal gas (~2373505 x 2048) = 4860955340 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 32): 199690560 --- 79.87622 seconds
+
+Joint for Finalize64 with 4096 inputs
+reveal gas (~2373505 x 4096) = 9721893580 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 64): 399381120 --- 159.75245 seconds
+
+Joint for Finalize64 with 8192 inputs
+reveal gas (~2373505 x 8192) = 19443770060 --- ~ 0.94940 seconds
+finalize gas (~6240330 x 128): 798762240 --- 319.50490 seconds
+
+-----------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+node_modules
+./keygen/powersOfTau28_hez_final_18.ptau
+zkay*
+
+# circuits/*.vk.json
+# circuits/*.pk
+
+circuits

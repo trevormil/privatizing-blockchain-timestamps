@@ -10,6 +10,10 @@ const config: HardhatUserConfig = {
         hardhat: {
             blockGasLimit: 100000000429720, // whatever you want here
             allowUnlimitedContractSize: true,
+            mining: {
+                auto: false,
+                interval: 12000,
+            }
         },
         geth: {
 
@@ -17,10 +21,10 @@ const config: HardhatUserConfig = {
             // accounts: [GOERLI_PRIVATE_KEY]
             blockGasLimit: 100000000429720, // whatever you want here
             allowUnlimitedContractSize: true,
-            accounts: ["0x0185b5e2c3dad4c85a4418e6a52bed0849e128b9db9e5c5249c67e78ff9cce40"]
+            accounts: ["0x0185b5e2c3dad4c85a4418e6a52bed0849e128b9db9e5c5249c67e78ff9cce40"],
+            gasPrice: 1,
+            // gas: 25e6,
         }
-
-
     }
 };
 

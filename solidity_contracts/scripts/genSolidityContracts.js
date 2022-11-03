@@ -9,6 +9,7 @@ const filenames = [
     'Finalize16',
     'Finalize32',
     'Finalize64',
+    'Finalize128',
 ];
 
 for (const file of filenames) {

@@ -33,6 +33,7 @@ async function main() {
         "Finalize16",
         "Finalize32",
         "Finalize64",
+        "Finalize128",
     ]
     const deployedLibraries = [];
     const libraryAddresses: any = {};

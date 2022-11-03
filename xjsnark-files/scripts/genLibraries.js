@@ -13,6 +13,7 @@ const filenames = [
     'Finalize16.vk.json',
     'Finalize32.vk.json',
     'Finalize64.vk.json',
+    'Finalize128.vk.json',
     'Reveal.vk.json',
     'Reveal2048.vk.json',
 ];

@@ -7,40 +7,36 @@
 
 # pinocchio Reveal2048.arith genkeys Reveal2048.pk Reveal2048.vk.json > ../pinocchio_outputs/Reveal2048_genkeys.txt;
 # pinocchio Reveal2048.arith prove Reveal2048_Sample_Run1.in Reveal2048.pk Reveal2048Proof.json > ../pinocchio_outputs/Reveal2048_prove.txt;
-# printf "Reveal2048 done\n"
+printf "Reveal2048 done\n"
 
-# pinocchio Finalize2.arith genkeys Finalize2.pk Finalize2.vk.json > ../pinocchio_outputs/Finalize2_genkeys.txt;
-# pinocchio Finalize2.arith prove Finalize2_Sample_Run1.in Finalize2.pk Finalize2Proof.json > ../pinocchio_outputs/Finalize2_prove.txt;
-# printf "Finalize2 done\n"
+# pinocchio FinalizeStandard2.arith genkeys FinalizeStandard2.pk FinalizeStandard2.vk.json > ../pinocchio_outputs/FinalizeStandard2_genkeys.txt;
+# pinocchio FinalizeStandard2.arith prove FinalizeStandard2_Sample_Run1.in FinalizeStandard2.pk FinalizeStandard2Proof.json > ../pinocchio_outputs/FinalizeStandard2_prove.txt;
+# printf "FinalizeStandard2 done\n"
 
-# pinocchio Finalize4.arith genkeys Finalize4.pk Finalize4.vk.json > ../pinocchio_outputs/Finalize4_genkeys.txt;
-# pinocchio Finalize4.arith prove Finalize4_Sample_Run1.in Finalize4.pk Finalize4Proof.json > ../pinocchio_outputs/Finalize4_prove.txt;
-# printf "Finalize4 done\n"
+# pinocchio FinalizeStandard4.arith genkeys FinalizeStandard4.pk FinalizeStandard4.vk.json > ../pinocchio_outputs/FinalizeStandard4_genkeys.txt;
+# pinocchio FinalizeStandard4.arith prove FinalizeStandard4_Sample_Run1.in FinalizeStandard4.pk FinalizeStandard4Proof.json > ../pinocchio_outputs/FinalizeStandard4_prove.txt;
+# printf "FinalizeStandard4 done\n"
 
-# pinocchio Finalize8.arith genkeys Finalize8.pk Finalize8.vk.json > ../pinocchio_outputs/Finalize8_genkeys.txt;
-# pinocchio Finalize8.arith prove Finalize8_Sample_Run1.in Finalize8.pk Finalize8Proof.json  > ../pinocchio_outputs/Finalize8_prove.txt;
-# printf "Finalize8 done\n"
+pinocchio FinalizeStandard8.arith genkeys FinalizeStandard8.pk FinalizeStandard8.vk.json > ../pinocchio_outputs/FinalizeStandard8_genkeys.txt;
+pinocchio FinalizeStandard8.arith prove FinalizeStandard8_Sample_Run1.in FinalizeStandard8.pk FinalizeStandard8Proof.json  > ../pinocchio_outputs/FinalizeStandard8_prove.txt;
+printf "FinalizeStandard8 done\n"
 
-# pinocchio Finalize16.arith genkeys Finalize16.pk Finalize16.vk.json > ../pinocchio_outputs/Finalize16_genkeys.txt;
-# pinocchio Finalize16.arith prove Finalize16_Sample_Run1.in Finalize16.pk Finalize16Proof.json > ../pinocchio_outputs/Finalize16_prove.txt;
-# printf "Finalize16 done\n"
+pinocchio FinalizeStandard16.arith genkeys FinalizeStandard16.pk FinalizeStandard16.vk.json > ../pinocchio_outputs/FinalizeStandard16_genkeys.txt;
+pinocchio FinalizeStandard16.arith prove FinalizeStandard16_Sample_Run1.in FinalizeStandard16.pk FinalizeStandard16Proof.json > ../pinocchio_outputs/FinalizeStandard16_prove.txt;
+printf "FinalizeStandard16 done\n"
 
-# pinocchio Finalize32.arith genkeys Finalize32.pk Finalize32.vk.json > ../pinocchio_outputs/Finalize32_genkeys.txt;
-# pinocchio Finalize32.arith prove Finalize32_Sample_Run1.in Finalize32.pk Finalize32Proof.json > ../pinocchio_outputs/Finalize32_prove.txt;
-# printf "Finalize32 done\n"
+pinocchio FinalizeStandard32.arith genkeys FinalizeStandard32.pk FinalizeStandard32.vk.json > ../pinocchio_outputs/FinalizeStandard32_genkeys.txt;
+pinocchio FinalizeStandard32.arith prove FinalizeStandard32_Sample_Run1.in FinalizeStandard32.pk FinalizeStandard32Proof.json > ../pinocchio_outputs/FinalizeStandard32_prove.txt;
+printf "FinalizeStandard32 done\n"
 
-# pinocchio Finalize64.arith genkeys Finalize64.pk Finalize64.vk.json > ../pinocchio_outputs/Finalize64_genkeys.txt;
-# pinocchio Finalize64.arith prove Finalize64_Sample_Run1.in Finalize64.pk Finalize64Proof.json > ../pinocchio_outputs/Finalize64_prove.txt;
-# printf "Finalize64 done\n"
-
-
-
-# pinocchio Finalize128.arith genkeys Finalize128.pk Finalize128.vk.json > ../pinocchio_outputs/Finalize128_genkeys.txt;
-# pinocchio Finalize128.arith prove Finalize128_Sample_Run1.in Finalize128.pk Finalize128Proof.json > ../pinocchio_outputs/Finalize128_prove.txt;
+pinocchio FinalizeStandard64.arith genkeys FinalizeStandard64.pk FinalizeStandard64.vk.json > ../pinocchio_outputs/FinalizeStandard64_genkeys.txt;
+pinocchio FinalizeStandard64.arith prove FinalizeStandard64_Sample_Run1.in FinalizeStandard64.pk FinalizeStandard64Proof.json > ../pinocchio_outputs/FinalizeStandard64_prove.txt;
+printf "FinalizeStandard64 done\n"
 
 
-# pinocchio Finalize256.arith genkeys Finalize256.pk Finalize256.vk.json > ../pinocchio_outputs/Finalize256_genkeys.txt;
-# pinocchio Finalize256.arith prove Finalize256_Sample_Run1.in Finalize256.pk Finalize256Proof.json > ../pinocchio_outputs/Finalize256_prove.txt;
+
+pinocchio FinalizeStandard128.arith genkeys FinalizeStandard128.pk FinalizeStandard128.vk.json > ../pinocchio_outputs/FinalizeStandard128_genkeys.txt;
+pinocchio FinalizeStandard128.arith prove FinalizeStandard128_Sample_Run1.in FinalizeStandard128.pk FinalizeStandard128Proof.json > ../pinocchio_outputs/FinalizeStandard128_prove.txt;
 
 
 node ../scripts/genLibraries.js

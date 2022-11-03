@@ -7,14 +7,14 @@ pragma solidity >=0.7.0 <0.9.0;
 `;
 
 const filenames = [
-    'Finalize2.vk.json',
-    'Finalize4.vk.json',
-    'Finalize8.vk.json',
-    'Finalize16.vk.json',
-    'Finalize32.vk.json',
-    'Finalize64.vk.json',
-    'Finalize128.vk.json',
-    'Reveal.vk.json',
+    // 'FinalizeStandard2.vk.json',
+    // 'FinalizeStandard4.vk.json',
+    'FinalizeStandard8.vk.json',
+    'FinalizeStandard16.vk.json',
+    'FinalizeStandard32.vk.json',
+    'FinalizeStandard64.vk.json',
+    'FinalizeStandard128.vk.json',
+    // 'Reveal.vk.json',
     'Reveal2048.vk.json',
 ];
 

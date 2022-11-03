@@ -27,13 +27,13 @@ async function main() {
     const MAX_GAS_PER_BLOCK = 100000000000;
 
     const circuitNames = [
-        "Finalize2",
-        "Finalize4",
-        "Finalize8",
-        "Finalize16",
-        "Finalize32",
-        "Finalize64",
-        "Finalize128",
+        // "FinalizeStandard2",
+        // "FinalizeStandard4",
+        "FinalizeStandard8",
+        "FinalizeStandard16",
+        "FinalizeStandard32",
+        "FinalizeStandard64",
+        "FinalizeStandard128",
     ]
     const deployedLibraries = [];
     const libraryAddresses: any = {};
@@ -87,7 +87,7 @@ async function main() {
         const revealProofJson = require(`./proofInputs/RevealProof2048.json`);
 
         // console.log(revealProofJson.inputs.length)
-        for (let i = 0; i < Number(circuitName.split('lize')[1]); i++) {
+        for (let i = 0; i < Number(circuitName.split('ard')[1]); i++) {
             const reveal = await contract.SubmitInput(
                 revealProofJson.proof,
                 revealProofJson.inputs,

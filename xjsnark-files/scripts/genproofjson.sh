@@ -1,11 +1,11 @@
-node ../scripts/parseProof.js ../circuits/Finalize2Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize4Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize8Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize16Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize32Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize64Proof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Finalize128Proof.json > /dev/null 2>&1
+# node ../scripts/parseProof.js ../circuits/FinalizeStandard2Proof.json > /dev/null 2>&1
+# node ../scripts/parseProof.js ../circuits/FinalizeStandard4Proof.json > /dev/null 2>&1
+node ../scripts/parseProof.js ../circuits/FinalizeStandard8Proof.json > /dev/null 2>&1
+node ../scripts/parseProof.js ../circuits/FinalizeStandard16Proof.json > /dev/null 2>&1
+node ../scripts/parseProof.js ../circuits/FinalizeStandard32Proof.json > /dev/null 2>&1
+node ../scripts/parseProof.js ../circuits/FinalizeStandard64Proof.json > /dev/null 2>&1
+node ../scripts/parseProof.js ../circuits/FinalizeStandard128Proof.json > /dev/null 2>&1
 
 
-node ../scripts/parseProof.js ../circuits/RevealProof.json > /dev/null 2>&1
-node ../scripts/parseProof.js ../circuits/Reveal2048Proof.json > /dev/null 2>&1
+# node ../scripts/parseProof.js ../circuits/RevealProof.json > /dev/null 2>&1
+# node ../scripts/parseProof.js ../circuits/Reveal2048Proof.json > /dev/null 2>&1

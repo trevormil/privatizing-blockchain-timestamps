@@ -17,7 +17,9 @@ Note that this repository also uses Git LFS (large file storage) to fetch the .a
 
 ## Generating Keys / Proofs, Verification Libraries, Application Contracts, and Running Benchmarks
 
-```source runall.sh``` is the main script that should build and benchmark everything by calling every other script. Note that in runfinalize.sh, there are two flags for skipping the proof/key generation and also skipping the benchmark outputs. These are typically the longest, and once you run them once, they do not have to be run again (i.e. the flags can be turned off).
+```source runall.sh``` is the main script that should build and benchmark everything by calling every other script. See this file for how to run individual scripts.
+
+Note that in runfinalize.sh, there are two flags for skipping the proof/key generation and also skipping the benchmark outputs. These are typically the longest, and once you run them once, they do not have to be run again (i.e. the flags can be turned off).
 
 ```npx hardhat node``` must always be running in another terminal from the solidity_contracts folder for testing blockchain gas metrics.
 

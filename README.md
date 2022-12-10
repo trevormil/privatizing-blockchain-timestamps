@@ -15,15 +15,15 @@ We provided our circuit files (.arith and .in), but the source code for the circ
 
 Note that this repository also uses Git LFS (large file storage) to fetch the .arith and .in circuit files. All other large files should be generated with the runall.sh script
 
-## Generating Keys, Proofs, and Benchmarks
+## Generating Keys / Proofs, Verification Libraries, Application Contracts, and Running Benchmarks
 
-```source runall.sh``` is the main script that should build and benchmark everything for the zkSNARK circuits. Note that in runfinalize.sh, there are two flags for skipping the proof/key generation and also skipping the benchmark outputs. These are typically the longest, and once you run them once, they do not have to be run again.
+```source runall.sh``` is the main script that should build and benchmark everything by calling every other script. Note that in runfinalize.sh, there are two flags for skipping the proof/key generation and also skipping the benchmark outputs. These are typically the longest, and once you run them once, they do not have to be run again (i.e. the flags can be turned off).
 
-```npx hardhat node``` must be running in another terminal from the solidity_contracts folder for testing blockchain gas metrics.
+```npx hardhat node``` must always be running in another terminal from the solidity_contracts folder for testing blockchain gas metrics.
 
 Follow the comments in script files and error messages within all script files for debugging.
 
-Outputs will be in libsnark_outputs, pinocchio_outputs, and solidity_contracts/outputs folder.
+Output text files will be in libsnark_outputs, pinocchio_outputs, and solidity_contracts/outputs folder.
 
 ## Repository Overview
 

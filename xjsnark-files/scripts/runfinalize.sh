@@ -9,8 +9,8 @@
 
 # You may need to make a pinocchio_outputs folder within xjsnark-files
 
-SHOULD_PROVE_AND_GENKEYS=false
-SHOULD_BENCHMARK=false
+SHOULD_PROVE_AND_GENKEYS=true
+SHOULD_BENCHMARK=true
 
 if $SHOULD_PROVE_AND_GENKEYS; then
     echo "Running runfinalize.sh..."

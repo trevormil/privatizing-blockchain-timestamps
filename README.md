@@ -5,7 +5,9 @@ I apologize for the messy code. I am looking to clean it up in the near future.
 ## Setup 
 Make sure all dependencies for 
 [jsnark/libsnark](https://github.com/akosba/jsnark), [ethsnarks](https://github.com/HarryR/ethsnarks),
-[xjsnark](https://github.com/trevormil/xjsnark-circuits), and [Hardhat](https://hardhat.org/) are installed. We have only executed this on Ubuntu. We built libsnark with the ALT_BN_128 and MULTICORE flags turned on.
+[xjsnark](https://github.com/trevormil/xjsnark-circuits), and [Hardhat](https://hardhat.org/) are installed. Note we have only executed this on Ubuntu. 
+
+We built libsnark with the ALT_BN_128 and MULTICORE flags turned on.
 
 Note that I hard copied my ./pinocchio and ./run_ppzksnark files from [jsnark/libsnark](https://github.com/akosba/jsnark) and [ethsnarks](https://github.com/HarryR/ethsnarks) respectively. These may not work on your machine, so you will need to copy over your built executables to the circuits folder and replace mine, if this is the case.
 

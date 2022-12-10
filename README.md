@@ -1,5 +1,7 @@
 # Privatizing the Timing and Volume of Transactions for Blockchain Applications
 
+I apologize for the messy code. I am looking to clean it up in the near future.
+
 ```source runall.sh``` is the main script that should build and benchmark everything for the zkSNARK circuits.
 
 ```npx hardhat node``` must be run from the solidity_contracts folder for testing blockchain gas metrics.

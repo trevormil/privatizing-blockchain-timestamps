@@ -2,6 +2,8 @@
 
 I apologize for the messy code. I am looking to clean it up in the near future.
 
+Paper Link - TBD
+
 ## Setup 
 Make sure all dependencies for 
 [jsnark/libsnark](https://github.com/akosba/jsnark), [ethsnarks](https://github.com/HarryR/ethsnarks),

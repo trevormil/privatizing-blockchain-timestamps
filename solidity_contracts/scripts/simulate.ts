@@ -1,3 +1,6 @@
+// I apologize for all this mess of code. This is the code we used to test gas costs
+// and other blockcahin metrics for our system. Not all relevant code may be here.
+
 import { ethers } from "hardhat";
 
 const hexToDecimal = (hex: any) => parseInt(hex, 16);

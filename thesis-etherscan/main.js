@@ -3,7 +3,7 @@ const fs = require('fs');
 const axios = require('axios');
 
 const filepath = './verifiedetherscancontracts.csv';
-const API_TOKEN = '2K3BC15QHX85IGZCSXPKP5TZ2MZG4DZ3VJ'; 
+const API_TOKEN = ''; //TODO: insert your own API token
 
 const addresses = [];
 

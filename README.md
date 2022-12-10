@@ -9,7 +9,7 @@ Make sure all dependencies for
 
 Note that I hard copied my ./pinocchio and ./run_ppzksnark files from [jsnark/libsnark](https://github.com/akosba/jsnark) and [ethsnarks](https://github.com/HarryR/ethsnarks) respectively. These may not work on your machine, so you will need to copy over your built executables to the circuits folder and replace mine, if this is the case.
 
-We provided our circuit files (.arith and .in), but the source code for the circuit files were generated with MPS and can be found at [https://github.com/trevormil/xjsnark-circuits](https://github.com/trevormil/xjsnark-circuits). Follow xjsnark setup for reconstructing these circuits. Currently, the generic application contracts are provided. The Dutch auction contracts are almost exactly the same, so we didn't explicitly provide them here, but within FinalizeStandard8 in MPS, you can see the Dutch auction code.
+We provided our circuit files (.arith and .in), but the source code for the circuit files were generated with MPS and can be found at [https://github.com/trevormil/xjsnark-circuits](https://github.com/trevormil/xjsnark-circuits). Follow xjsnark setup for reconstructing these circuits. Currently, the generic application contracts are provided. The Dutch auction contracts are almost exactly the same, so we didn't explicitly provide them here, but within FinalizeStandard8 in MPS, you can see the Dutch auction circuit generation code.
 
 Note that this repository also uses Git LFS (large file storage) to fetch the .arith and .in circuit files. All other large files should be generated with the runall.sh script
 

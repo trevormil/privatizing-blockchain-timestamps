@@ -2,17 +2,24 @@
 
 I apologize for the messy code. I am looking to clean it up in the near future.
 
-```source runall.sh``` is the main script that should build and benchmark everything for the zkSNARK circuits.
+## Setup 
+Make sure all dependencies for 
+[jsnark/libsnark](https://github.com/akosba/jsnark), [ethsnarks](https://github.com/HarryR/ethsnarks)
+[xjsnark](https://github.com/trevormil/xjsnark-circuits), and [Hardhat](https://hardhat.org/) are installed.
 
-```npx hardhat node``` must be run from the solidity_contracts folder for testing blockchain gas metrics.
+Note that I hard copied my ./pinocchio and ./run_ppzksnark files from [jsnark/libsnark](https://github.com/akosba/jsnark) and [ethsnarks](https://github.com/HarryR/ethsnarks) respectively. These may not work on your machine, so you will need to copy over your built executables to the circuits folder and replace mine, if this is the case.
 
-Note that I hard copied my ./pinocchio and ./run_ppzksnark files from jsnark/libsnark and ethsnarks respectively. These may not work on your machine, so you will need to copy over your built executables, if this is the case.
-
-Also, follow the comments and error messages within all script files for debugging.
-
-Circuit files were generated with MPS and can be found at [https://github.com/trevormil/xjsnark-circuits](https://github.com/trevormil/xjsnark-circuits). Follow xjsnark setup for reconstructing these circuits.
+We provided our circuit files (.arith and .in), but the source code for the circuit files were generated with MPS and can be found at [https://github.com/trevormil/xjsnark-circuits](https://github.com/trevormil/xjsnark-circuits). Follow xjsnark setup for reconstructing these circuits.
 
 Note that this repository also uses Git LFS (large file storage) to fetch the .arith and .in circuit files. All other large files should be generated with the runall.sh script
+
+## Generating Keys, Proofs, and Benchmarks
+
+```source runall.sh``` is the main script that should build and benchmark everything for the zkSNARK circuits.
+
+```npx hardhat node``` must be running in another terminal from the solidity_contracts folder for testing blockchain gas metrics.
+
+Follow the comments in script files and error messages within all script files for debugging.
 
 ## Repository Overview
 

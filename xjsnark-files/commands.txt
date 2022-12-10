@@ -1,1 +1,0 @@
-../../../ethsnarks/build/src/pinocchio/pinocchio ../../../../MPSProjects/xjsnark/outputs/StudentGradesStageOne.arith genkeys stageOne.pk stageOne.vk.json

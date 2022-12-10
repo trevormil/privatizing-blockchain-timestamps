@@ -1,4 +1,4 @@
-// node scripts/parseXJsnarkVKeyFileForRemix.js ../xjsnarkKeys/sha256.vk.json
+// This script generates the solidity contracts for our generic application with no application-specific logic.
 
 const fs = require('fs');
 
@@ -19,15 +19,8 @@ for (const file of filenames) {
     // Note that we assume manager is not a participating user
     // One can split Input phase into commit / reveal such as Hawk 
     contract ${file} {
-        /**
-            Define inputCommitment scheme here and how pseudo state updates are performed:
-            _____
-            TODO:
-        */
-        //Application-Specific Parameters
-        //Manager Abort Penalty: TODO
-        //Other: TODO:
-    
+        //TODO: Add any application-specific functionality, such as manager abort penalty and any other parameters
+
         enum ApplicationState {Init, Input, ManagerChallenge, UserResponse, Finalize}
         
         // User inputs for their commitments
@@ -35,21 +28,16 @@ for (const file of filenames) {
             uint256[] keyCiphertext; //Encrypted w/ RSA
             uint256[] inputCiphertext; //Encrypted w/ AES key
             uint timestamp;
-            bool valid; //assume it is valid by default
         }
         UserInput[] public userInputs;
-        uint constant MAX_USER_INPUTS = ${file.split('ard')[1]};
-    
-    
-    
+        uint constant MAX_USER_INPUTS = ${
+            file.split('ard')[1]
+        }; //Equivalent to N in our paper
+
         //Stage Timestamps
         uint public INPUT_DEADLINE;
-        uint PRICE_ONE_DEADLINE;
-        uint PRICE_TWO_DEADLINE;
         uint public FINALIZE_DEADLINE;
-    
-        uint[3] prices;
-    
+
         //Valid ranges for users to submit inputs (must be before INPUT_DEADLINE).
         struct TimestampRange {
             uint start;
@@ -59,14 +47,13 @@ for (const file of filenames) {
     
         //Manager information
         address public managerAddress;
+        string public managerRSAAddress;
         bool testing = true;
     
         constructor(
-            uint _priceOneDeadline, 
-            uint _priceTwoDeadline, 
             uint _inputDeadline, 
             uint _finalizeDeadline, 
-            uint[3] memory _prices,
+            string memory rsaAddress,
             uint[] memory _startTimes, 
             uint[] memory _endTimes
         ) {
@@ -74,15 +61,12 @@ for (const file of filenames) {
             for (uint i = 0; i < _startTimes.length; i++) {
                 validTimeRangesForInputs.push(TimestampRange(_startTimes[i], _endTimes[i]));
             }
-            
-            prices = _prices;
     
             managerAddress = msg.sender;
+            managerRSAAddress = rsaAddress;
             
             INPUT_DEADLINE = _inputDeadline;
             FINALIZE_DEADLINE = _finalizeDeadline;
-            PRICE_ONE_DEADLINE = _priceOneDeadline;
-            PRICE_TWO_DEADLINE = _priceTwoDeadline;
         }
     
         // Submit input and reveal to manager via ciphertext
@@ -91,6 +75,9 @@ for (const file of filenames) {
             uint256[] calldata proofInputs
         ) public payable {
             require(block.timestamp < INPUT_DEADLINE || testing);   //during bidding Interval  
+
+            // Note that invalid inputs can also be inputted but ignored within the applciation target function F via the Finalization proof, 
+            // but since timing data is public, we can do it here for efficiency and reject everything in the first place
             bool validTime = false;
             for (uint i = 0; i < validTimeRangesForInputs.length; i++) {
                 if (block.timestamp >= validTimeRangesForInputs[i].start && block.timestamp <= validTimeRangesForInputs[i].end) {
@@ -103,16 +90,16 @@ for (const file of filenames) {
                 proof,
                 proofInputs
             )) {
-                // revert();
+                // revert(); // This is due to a pinocchio compatibility error. We provide a sample proof which is invalid, but we simply ignore the invalid return value (thus, not affecting the experiment)
             }
 
+            //Store ciphertexts and timestamps for later use
             require(userInputs.length < MAX_USER_INPUTS);
             userInputs.push(UserInput
                 (
                     proofInputs[5:], 
                     proofInputs[1:5],
-                    block.timestamp,
-                    true
+                    block.timestamp
                 )
             );     
         }
@@ -125,14 +112,15 @@ for (const file of filenames) {
             require((block.timestamp < FINALIZE_DEADLINE && block.timestamp > INPUT_DEADLINE) || testing);
             require(1 + userInputs.length * 9 == proofInputs.length);
 
-            //Execute proof logic using userInputs
-            //For this implementation, we expect the following for inputs:
+            // Execute proof logic using userInputs
+            // For this implementation, we expect the following for proofInputs:
             // [0] = the hardcoded 1 wire
-            // MAX_USER_INPUTS * 16 -> ciphertext bytes
-            // MAX_USER_INPUTS -> timestamps
-            //TODO: remove testing
+            // [1 : MAX_USER_INPUTS * 4 + 1] -> AES ciphertext bytes 
+            // [MAX_USER_INPUTS * 4 + 1 : MAX_USER_INPUTS * 5 + 1] -> timestamps
+            // [MAX_USER_INPUTS * 5 + 1 : MAX_USER_INPUTS * 9 + 1] -> encrypted AES outputs
+
+            // Assert that the manager used the correct timestamps and AES ciphertexts within their proof
             for (uint i = 0; i < MAX_USER_INPUTS; i++) {
-                // TODO: 
                 for (uint j = 0; j < 4; j++) {
                     require(proofInputs[1 + (i * 4) + j] == userInputs[i].inputCiphertext[j]);
                 }
@@ -140,7 +128,7 @@ for (const file of filenames) {
                 require(proofInputs[1 + (MAX_USER_INPUTS * 4) + i] == userInputs[i].timestamp || testing);
             }
     
-    
+            // Execute and verify the proof
             if (!Verifier${file}.Verify${file}(
                 proof,
                 proofInputs
@@ -149,16 +137,18 @@ for (const file of filenames) {
                 revert("Proof failed to verify"); 
             }
 
-            //Can also use plaintext inputs (everything after timestamps in proofInputs)
-            
+            // Everything after the timestamps in proofInputs is the encrypted outputs of the application target function F
+            // We do not actually store this because we assume users can just query this manager's TX and decrypt their respective outputs
+            // But for ease of use, an application can store this information here if they want to
+            // TODO: Add any application-specific functionality
         }
     
         function HandleManagerAbort() public {
-            //We handle this bc inputs will never get marked as real and all funds can be withdrawn
+            //TODO: Add application-specific abort logic
         }
     
         modifier onlyManager() {
-            require(msg.sender == managerAddress); //by auctioneer only
+            require(msg.sender == managerAddress); //by manager only
             _;
         }
     }`;

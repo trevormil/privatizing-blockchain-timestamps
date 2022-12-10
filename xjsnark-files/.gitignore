@@ -2,4 +2,4 @@ circuits/*.vk.json
 circuits/*.pk
 circuits/*Proof*
 zkay*
-pinoc*
+scripts/parseVKey.js

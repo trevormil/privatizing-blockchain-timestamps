@@ -1,0 +1,62 @@
+(enter) Call to r1cs_gg_ppzksnark_zok_generator	[             ]	(1670682922.9546s x0.00 from start)
+  (enter) Call to r1cs_constraint_system::swap_AB_if_beneficial	[             ]	(1670682923.4236s x0.00 from start)
+    (enter) Estimate densities                 	[             ]	(1670682923.4236s x0.00 from start)
+      * Non-zero A-count (estimate): 215530
+      * Non-zero B-count (estimate): 1743115
+    (leave) Estimate densities                 	[0.1699s x1.00]	(1670682923.5935s x0.00 from start)
+    (enter) Perform the swap                   	[             ]	(1670682923.5935s x0.00 from start)
+    (leave) Perform the swap                   	[0.2246s x1.00]	(1670682923.8182s x0.00 from start)
+  (leave) Call to r1cs_constraint_system::swap_AB_if_beneficial	[0.3946s x1.00]	(1670682923.8182s x0.00 from start)
+  (enter) Call to r1cs_to_qap_instance_map_with_evaluation	[             ]	(1670682923.8183s x0.00 from start)
+    (enter) Compute evaluations of A, B, C, H at t	[             ]	(1670682923.8757s x0.00 from start)
+    (leave) Compute evaluations of A, B, C, H at t	[3.4720s x1.00]	(1670682927.3477s x0.00 from start)
+  (leave) Call to r1cs_to_qap_instance_map_with_evaluation	[3.5294s x1.00]	(1670682927.3477s x0.00 from start)
+  * QAP number of variables: 1892665
+  * QAP pre degree: 1898424
+  * QAP degree: 2097152
+  * QAP number of input variables: 73
+  (enter) Compute query densities            	[             ]	(1670682927.3488s x0.00 from start)
+  (leave) Compute query densities            	[0.0204s x1.00]	(1670682927.3692s x0.00 from start)
+  (enter) Compute gamma_ABC for R1CS verification key	[             ]	(1670682927.3692s x0.00 from start)
+  (leave) Compute gamma_ABC for R1CS verification key	[0.0000s x1.02]	(1670682927.3692s x0.00 from start)
+  (enter) Compute L query for R1CS proving key	[             ]	(1670682927.3692s x0.00 from start)
+  (leave) Compute L query for R1CS proving key	[0.2310s x1.00]	(1670682927.6003s x0.00 from start)
+  (enter) Generating G1 MSM window table     	[             ]	(1670682927.6003s x0.00 from start)
+    Choosing window size 17 for 3851382 elements
+    * G1 window: 17
+  (leave) Generating G1 MSM window table     	[1.2667s x1.00]	(1670682928.8670s x0.00 from start)
+  (enter) Generating G2 MSM window table     	[             ]	(1670682928.8670s x0.00 from start)
+    Choosing window size 15 for 215530 elements
+    * G2 window: 15
+  (leave) Generating G2 MSM window table     	[1.7292s x1.00]	(1670682930.5962s x0.00 from start)
+  (enter) Generate R1CS proving key          	[             ]	(1670682930.5962s x0.00 from start)
+    (enter) Generate queries                   	[             ]	(1670682930.5985s x0.00 from start)
+      (enter) Compute the A-query                	[             ]	(1670682930.5985s x0.00 from start)
+      .............................................................................................................................................................................................. DONE!
+      (leave) Compute the A-query                	[19.3204s x1.00]	(1670682949.9189s x0.00 from start)
+      (enter) Compute the B-query                	[             ]	(1670682949.9189s x0.00 from start)
+      Non-zero coordinate count: 215530/1892666 (11.39%)
+      (leave) Compute the B-query                	[14.0691s x1.00]	(1670682963.9880s x0.00 from start)
+      (enter) Compute the H-query                	[             ]	(1670682963.9880s x0.00 from start)
+      .................................................................................................................................................................................................................. DONE!
+      (leave) Compute the H-query                	[25.4922s x1.00]	(1670682989.4802s x0.00 from start)
+      (enter) Compute the L-query                	[             ]	(1670682989.4802s x0.00 from start)
+      .............................................................................................................................................................................................. DONE!
+      (leave) Compute the L-query                	[23.1625s x1.00]	(1670683012.6427s x0.00 from start)
+    (leave) Generate queries                   	[82.0442s x1.00]	(1670683012.6427s x0.00 from start)
+  (leave) Generate R1CS proving key          	[82.0465s x1.00]	(1670683012.6427s x0.00 from start)
+  (enter) Generate R1CS verification key     	[             ]	(1670683012.6427s x0.00 from start)
+    (enter) Encode gamma_ABC for R1CS verification key	[             ]	(1670683012.6436s x0.00 from start)
+      . DONE!
+    (leave) Encode gamma_ABC for R1CS verification key	[0.0011s x1.00]	(1670683012.6447s x0.00 from start)
+  (leave) Generate R1CS verification key     	[0.0020s x1.00]	(1670683012.6447s x0.00 from start)
+(leave) Call to r1cs_gg_ppzksnark_zok_generator	[89.6901s x1.00]	(1670683012.6447s x0.00 from start)
+* G1 elements in PK: 7775076
+* Non-zero G1 elements in PK: 6097940
+* G2 elements in PK: 1892667
+* Non-zero G2 elements in PK: 215531
+* PK size in bits: 1678473899
+* G1 elements in VK: 74
+* G2 elements in VK: 3
+* GT elements in VK: 0
+* VK size in bits: 20397

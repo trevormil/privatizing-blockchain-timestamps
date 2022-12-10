@@ -1,4 +1,5 @@
-// node scripts/parseXJsnarkVKeyFileForRemix.js ../xjsnarkKeys/sha256.vk.json
+// This script basically parses the Proof.json and formats in a way that can be used in the Solidity contract.
+// It then stors the proof and inputs in a file in the solidity_contracts/scripts/proofInputs folder.
 
 const fs = require('fs');
 const proofJson = require(process.argv[2]);

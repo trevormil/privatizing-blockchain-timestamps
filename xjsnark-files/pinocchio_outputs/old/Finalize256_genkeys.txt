@@ -1,0 +1,1 @@
+(enter) Call to r1cs_gg_ppzksnark_zok_generator	[             ]	(1667353713.4352s x0.00 from start)

@@ -1,4 +1,6 @@
-// node scripts/parseXJsnarkVKeyFileForRemix.js ../xjsnarkKeys/sha256.vk.json
+// I do not believe this is used anywhere by our scripts.
+// This logic is also performed in genLibraries.js
+// Leaving this script in because it could be useful just to simply print the verification key to the console.
 
 const vKeyJson = require(process.argv[2]);
 console.log('Parsing Verification Key JSON from ', process.argv[2]);

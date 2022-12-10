@@ -11,3 +11,9 @@ artifacts
 
 contracts/old
 contracts/Finalize*
+
+scripts/poseidon.ts
+
+old
+
+scripts/dutchAuc*

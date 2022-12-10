@@ -1,21 +1,14 @@
-#in another terminal, run npx hardhat node
+#First, in another terminal, run npx hardhat node
 
-cd ./xjsnark-files/
-cd ./circuits
-source ../scripts/runfinalize.sh #make sure everything you want to run is not commented out
+cd ./xjsnark-files/circuits
+source ../scripts/runfinalize.sh # if you do not want this to run, set SHOULD_EXECUTE to false within this file. this will skip the proof and key generation
 
-printf "\n\nxjsnark done\n\n"
+printf "\n\nrunfinalize.sh has finished\n\n"
 
-# cd ../../circom-files/
-# source scripts/runall.sh
-
-# printf "\n\nxcircom done\n\n"
+# Change localhost to geth if you want to run on geth
+# Double check your hardhat.config.ts file to make sure you have the right settings
+cd ../
+npx hardhat run --network localhost scripts/simulate.ts > ./outputs/simulate.txt
+printf "\n\nfinished testing simulated application. output is in solidity_contracts/outputs\n\n"
 
 cd ../
-npx hardhat run --network localhost scripts/aes.ts > ./outputs/aes.txt
-printf "\n\naes done\n\n"
-# npx hardhat run --network localhost scripts/poseidon.ts > ./outputs/poeidon.txt
-# printf "\n\nxposeidon done\n\n"
-
-# npx hardhat run --network localhost scripts/poseidon.ts > ./outputs/poeidon.txt
-# printf "\n\nxposeidon done\n\n"

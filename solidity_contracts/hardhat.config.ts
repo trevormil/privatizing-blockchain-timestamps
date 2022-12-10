@@ -10,10 +10,11 @@ const config: HardhatUserConfig = {
         hardhat: {
             blockGasLimit: 100000000429720, // whatever you want here
             allowUnlimitedContractSize: true,
-            mining: {
-                auto: false,
-                interval: 12000,
-            }
+            // Depends on whether you want to use automine mode or not
+            // mining: {
+            //     auto: false,
+            //     interval: 12000,
+            // },
         },
         geth: {
 

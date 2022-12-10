@@ -1,0 +1,10 @@
+(enter) Call to r1cs_gg_ppzksnark_zok_generator	[             ]	(1670687018.5736s x0.00 from start)
+  (enter) Call to r1cs_constraint_system::swap_AB_if_beneficial	[             ]	(1670687025.8370s x0.00 from start)
+    (enter) Estimate densities                 	[             ]	(1670687025.8380s x0.00 from start)
+      * Non-zero A-count (estimate): 3448450
+      * Non-zero B-count (estimate): 27889795
+    (leave) Estimate densities                 	[2.9104s x1.00]	(1670687028.7485s x0.00 from start)
+    (enter) Perform the swap                   	[             ]	(1670687028.7485s x0.00 from start)
+    (leave) Perform the swap                   	[3.6791s x1.00]	(1670687032.4276s x0.00 from start)
+  (leave) Call to r1cs_constraint_system::swap_AB_if_beneficial	[6.5910s x1.00]	(1670687032.4280s x0.00 from start)
+  (enter) Call to r1cs_to_qap_instance_map_with_evaluation	[             ]	(1670687032.4309s x0.00 from start)

@@ -1,4 +1,7 @@
-// node scripts/parseXJsnarkVKeyFileForRemix.js ../xjsnarkKeys/sha256.vk.json
+// This file generates the VerifierLibrary.sol file from the .vk.json files
+// Basically, this implements all the zkSNARK proof verification logic using the verification keys
+// and creates a Solidity library to verify each of the circuits' proofs.
+// We call these libraries from our application contracts.
 
 const fs = require('fs');
 
@@ -7,14 +10,11 @@ pragma solidity >=0.7.0 <0.9.0;
 `;
 
 const filenames = [
-    // 'FinalizeStandard2.vk.json',
-    // 'FinalizeStandard4.vk.json',
     'FinalizeStandard8.vk.json',
     'FinalizeStandard16.vk.json',
     'FinalizeStandard32.vk.json',
     'FinalizeStandard64.vk.json',
     'FinalizeStandard128.vk.json',
-    // 'Reveal.vk.json',
     'Reveal2048.vk.json',
 ];
 

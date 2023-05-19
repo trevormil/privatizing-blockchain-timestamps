@@ -1,0 +1,3 @@
+(enter) Call to r1cs_gg_ppzksnark_zok_prover	[             ]	(1670681619.6069s x0.00 from start)
+  (enter) Compute the polynomial H           	[             ]	(1670681619.6069s x0.00 from start)
+    (enter) Call to r1cs_to_qap_witness_map    	[             ]	(1670681619.6069s x0.00 from start)

@@ -1,0 +1,5 @@
+circuits/*.vk.json
+circuits/*.pk
+circuits/*Proof*
+zkay*
+scripts/parseVKey.js

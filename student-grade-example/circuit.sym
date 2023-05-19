@@ -1,0 +1,15 @@
+1,1,0,main.c
+2,2,0,main.xCommitments[0]
+3,3,0,main.xCommitments[1]
+4,4,0,main.xCommitments[2]
+5,5,0,main.yCommitments[0]
+6,6,0,main.yCommitments[1]
+7,7,0,main.yCommitments[2]
+8,8,0,main.timestamps[0]
+9,9,0,main.timestamps[1]
+10,10,0,main.timestamps[2]
+11,11,0,main.int[0]
+12,12,0,main.int[1]
+13,-1,0,main.int[2]
+14,-1,0,main.a
+15,-1,0,main.b

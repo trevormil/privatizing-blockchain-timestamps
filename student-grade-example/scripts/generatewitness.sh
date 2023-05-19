@@ -1,0 +1,1 @@
+node ./circuit_js/generate_witness.js ./circuit_js/circuit.wasm ./input.json ./circuit_files/witness.wtns
